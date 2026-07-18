@@ -1,0 +1,436 @@
+:root {
+  --blue: #0b2c5f;
+  --blue2: #1b4fa3;
+  --bg: #f4f6fb;
+}
+
+body {
+  margin: 0;
+  font-family: 'Changa', sans-serif;
+  background: var(--bg);
+  color: #111;
+}
+
+body.articoli h1 {
+  font-family: 'Changa', sans-serif !important;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #0b2c5f, #1b4fa3);
+  color: rgb(255, 255, 255);
+  padding: 10px 30px;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+/* logo a sinistra */
+header img {
+  height: 99px;
+  display: block;
+}
+
+/* titolo centrato vero */
+header h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0px;
+  font-family: 'Changa', Changa, sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+.page-title {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Changa', sans-serif;
+  margin: 20px 0;
+}
+
+body.articoli .page-title {
+  font-size: 20px;
+  font-family: 'Changa', sans-serif !important
+}
+
+.site-header h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-family: 'Changa', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+/* NAV */
+nav {
+  background: #081a38;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+}
+
+nav a {
+  flex: 1;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 16px 0;
+  transition: background 0.2s ease;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 14px;
+  margin-bottom: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+/* CARD */
+.card h3 {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+  font-family: 'Changa', sans-serif;
+}
+
+/* TITOLI */
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+  text-transform: uppercase;
+  font-family: 'Changa', sans-serif;
+}
+
+/* ARTICOLO IMG */
+img.article-img {
+  width: 100%;
+  font-family: 'Changa', sans-serif;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #06122a;
+  color: #cbd5e1;
+  padding: 40px 20px;
+  margin-top: 40px;
+  font-family: 'Changa', sans-serif;
+}
+
+.footer-grid {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+footer h4 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+footer a {
+  color: #cbd5e1;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-family: 'Changa', sans-serif;
+}
+
+footer a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  opacity: 0.7;
+  font-family: 'Changa', sans-serif;
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.hero {
+  height: 220px;
+  margin: 20px;
+  border-radius: 16px;
+  font-family: 'Changa', sans-serif;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.55),
+      rgba(0,0,0,0.55)
+    ),
+    url("Sinigaglia-Stadio.png");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.hero-content {
+  text-align: center;
+  font-family: 'Changa', sans-serif;
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 28px;
+  font-family: 'Changa', sans-serif;
+}
+
+.hero p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-family: 'Changa', sans-serif;
+  opacity: 100%;
+}
+body.articoli {
+  font-family: 'Changa', sans-serif !important;
+}
+
+.market-title {
+    width: 100%;
+    padding: 25px;
+    font-size: 28px;
+    font-family: 'Changa', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 12px;
+    color:hsl(0, 0%, 100%);
+    background: #0b2c5f;  /* blu Como */
+}
+
+/* ===== CALENDARIO ===== */
+
+.section-title{
+    margin-top:40px;
+    margin-bottom:15px;
+    color:var(--blue);
+    font-size:32px;
+}
+
+.fixture-table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    margin-bottom:40px;
+}
+
+.fixture-table thead{
+    background:var(--blue);
+    color:white;
+}
+
+.fixture-table th,
+.fixture-table td{
+    padding:18px;
+    text-align:center;
+}
+
+.fixture-table tbody tr:nth-child(even){
+    background:#f4f6fb;
+}
+
+.fixture-table tbody tr:hover{
+    background:#dfeaff;
+}
+
+.fixture-table td:nth-child(2){
+    text-align:left;
+}
+
+/* LINK ARTICOLI */
+.container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container a .card h3 {
+  color: #111;
+}
+
+.container a:hover .card h3 {
+  color: var(--blue2);
+}
+
+@media (max-width: 800px) {
+
+  header {
+    justify-content: center;
+    padding: 10px;
+  }
+
+  header img {
+    height: 75px;
+  }
+
+  header h1 {
+    font-size: 30px;
+    position: absolute;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  nav {
+    overflow-x: auto;
+    justify-content: flex-start;
+    display: flex;
+    scrollbar-width: none;
+  }
+
+  nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  nav a {
+    flex: 0 0 auto;
+    padding: 14px 22px;
+    white-space: nowrap;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .hero {
+    margin: 10px;
+    height: 170px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  header {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    justify-content: center;
+  }
+
+  header img {
+    height: 75px;
+  }
+
+  header h1 {
+    display: none;
+  }
+
+}
+
+/* IMMAGINI ARTICOLI - DIMENSIONE UNIFORME */
+
+.article-img {
+  width: 100%;
+  max-width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
+.card img {
+  overflow: hidden;
+}
+
+@media (max-width: 800px) {
+
+  .article-img {
+    height: 220px;
+  }
+
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.fixture-table {
+  width: 100%;
+  table-layout: fixed;
+  font-size: 14px;
+}
+
+.fixture-table th,
+.fixture-table td {
+  padding: 10px 5px;
+  word-wrap: break-word;
+}
+
+@media (max-width: 800px) {
+
+  .fixture-table {
+    font-size: 12px;
+  }
+
+  .fixture-table th,
+  .fixture-table td {
+    padding: 8px 3px;
+  }
+
+}
+
+footer {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+footer {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}

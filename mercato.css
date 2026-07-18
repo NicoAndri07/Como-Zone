@@ -1,0 +1,49 @@
+/* HERO MERCATO */
+.mercato-hero {
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.55),
+      rgba(0,0,0,0.55)
+    ),
+    url("Sinigaglia-Stadio.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* LISTA NOTIZIE MERCATO */
+.market-news {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.market-item {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.market-title {
+  width: 100%;
+  padding: 18px 20px;
+  background: var(--blue);
+  color: white;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: "Changa", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.market-title:hover {
+  background: var(--blue2);
+}
+
+.market-content {
+  display: none;
+  padding: 20px;
+  line-height: 1.6;
+}
