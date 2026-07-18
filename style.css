@@ -445,15 +445,6 @@ body {
     display: none;
   }
 
-  nav {
-    flex-direction: column;
-  }
-
-  nav a {
-    width: 100%;
-    padding: 12px 0;
-  }
-
   .hero {
     height: 180px;
     margin: 15px;
