@@ -434,3 +434,51 @@ footer {
 body {
   margin: 0;
 }
+
+@media (max-width: 600px) {
+
+  header {
+    padding: 25px 0;
+    justify-content: center;
+  }
+
+  header img {
+    height: 80px;
+  }
+
+  header h1 {
+    display: none;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  .hero {
+    height: 180px;
+    margin: 15px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .container {
+    width: auto;
+    padding: 0 12px;
+  }
+
+  .card h3 {
+    font-size: 26px;
+  }
+
+  footer {
+    padding: 30px 15px;
+  }
+
+}
