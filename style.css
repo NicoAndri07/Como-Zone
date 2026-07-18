@@ -315,20 +315,15 @@ body.articoli {
 @media (max-width: 800px) {
 
   nav {
+    flex-direction: row;
     overflow-x: auto;
     justify-content: flex-start;
-    display: flex;
-    scrollbar-width: none;
-  }
-
-  nav::-webkit-scrollbar {
-    display: none;
+    white-space: nowrap;
   }
 
   nav a {
     flex: 0 0 auto;
-    padding: 14px 22px;
-    white-space: nowrap;
+    padding: 16px 25px;
   }
 
 }
